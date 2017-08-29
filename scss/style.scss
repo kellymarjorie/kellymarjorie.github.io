@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
-@import url(https://fonts.googleapis.com/css?family=Rubik:900);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One');
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
 
 $primary-colour1: #fed12e;
 $primary-colour2: #d62b23;
 $primary-colour3: #354c59;
 $title-font: 'Bungee Shade', cursive;
-$headline-font: 'Rubik', sans-serif;
+$headline-font: 'Yatra One', cursive;
 
 body {
     padding-top: 60px;
@@ -20,7 +20,7 @@ body {
 
 .headline {
     color: $primary-colour2;
-    font: $headline-font;
+    font: 40px $headline-font;
 }
 
 .img-circle {
@@ -29,7 +29,8 @@ body {
 
 .icons {
     padding-top: 30px;
-    font-size: 40px;
+    padding-bottom: 80px;
+    font-size: 60px;
     text-align: center;
     a {
         color: $primary-colour1;
@@ -40,6 +41,45 @@ body {
 }
 
 .skills {
+    padding-bottom: 50px;
     text-align: center;
+    color: $primary-colour2;
+    font-size: 140px;
+    .html5:hover {
+        color: #e34f26;
+    }
+    .css3:hover {
+        color: #0079C6;
+    }
+    .js:hover {
+        color: #F0DB4F;
+    }
+    .python:hover {
+        color: #4584b6;
+    }
+    .postgresql:hover {
+        color: #316192;
+    }
+    .git:hover {
+        color: #6e5494;
+    }
+    .bootstrap:hover {
+        color: #563D7C;
+    }
+    .sass:hover {
+        color: #CD679A;
+    }
+    .jquery:hover{
+        color: #0769ad;
+    }
+    .django:hover {
+        color: #092e20;
+    }
+    .github:hover {
+        color: #4078c0;
+    }
 }
 
+.skills-header {
+    
+}

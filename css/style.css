@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
-@import url(https://fonts.googleapis.com/css?family=Rubik:900);
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One");
+@import url("https://fonts.googleapis.com/css?family=Lalezar");
 body {
   padding-top: 60px; }
 
@@ -11,14 +11,15 @@ body {
 
 .headline {
   color: #d62b23;
-  font: "Rubik", sans-serif; }
+  font: 40px "Yatra One", cursive; }
 
 .img-circle {
   height: 180px; }
 
 .icons {
   padding-top: 30px;
-  font-size: 40px;
+  padding-bottom: 80px;
+  font-size: 60px;
   text-align: center; }
   .icons a {
     color: #fed12e; }
@@ -26,6 +27,31 @@ body {
     color: #354c59; }
 
 .skills {
-  text-align: center; }
+  padding-bottom: 50px;
+  text-align: center;
+  color: #d62b23;
+  font-size: 140px; }
+  .skills .html5:hover {
+    color: #e34f26; }
+  .skills .css3:hover {
+    color: #0079C6; }
+  .skills .js:hover {
+    color: #F0DB4F; }
+  .skills .python:hover {
+    color: #4584b6; }
+  .skills .postgresql:hover {
+    color: #316192; }
+  .skills .git:hover {
+    color: #6e5494; }
+  .skills .bootstrap:hover {
+    color: #563D7C; }
+  .skills .sass:hover {
+    color: #CD679A; }
+  .skills .jquery:hover {
+    color: #0769ad; }
+  .skills .django:hover {
+    color: #092e20; }
+  .skills .github:hover {
+    color: #4078c0; }
 
 /*# sourceMappingURL=style.css.map */
