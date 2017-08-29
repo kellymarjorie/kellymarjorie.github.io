@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
+@import url(https://fonts.googleapis.com/css?family=Rubik:900);
+body {
+  padding-top: 60px; }
+
+.title {
+  text-align: center;
+  color: #fed12e;
+  font: 75px "Bungee Shade", cursive;
+  padding-bottom: 40px; }
+
+.headline {
+  color: #d62b23;
+  font: "Rubik", sans-serif; }
+
+.img-circle {
+  height: 180px; }
+
+.icons {
+  padding-top: 30px;
+  font-size: 40px;
+  text-align: center; }
+  .icons a {
+    color: #fed12e; }
+  .icons a:hover, .icons a:active {
+    color: #354c59; }
+
+.skills {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

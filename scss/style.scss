@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee+Shade);
+@import url(https://fonts.googleapis.com/css?family=Rubik:900);
+
+$primary-colour1: #fed12e;
+$primary-colour2: #d62b23;
+$primary-colour3: #354c59;
+$title-font: 'Bungee Shade', cursive;
+$headline-font: 'Rubik', sans-serif;
+
+body {
+    padding-top: 60px;
+}
+
+.title {
+    text-align: center;
+    color: $primary-colour1;
+    font: 75px $title-font;
+    padding-bottom: 40px;
+}
+
+.headline {
+    color: $primary-colour2;
+    font: $headline-font;
+}
+
+.img-circle {
+    height: 180px;
+}
+
+.icons {
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+    a {
+        color: $primary-colour1;
+    }
+    a:hover, a:active {
+        color: $primary-colour3;
+    }
+}
+
+.skills {
+    text-align: center;
+}
+
