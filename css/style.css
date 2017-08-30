@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lalezar");
 body {
   padding-top: 60px;
-  padding-bottom: 100px; }
+  padding-bottom: 120px;
+  color: #354c59; }
 
 .title {
   text-align: center;
@@ -55,6 +56,20 @@ body {
     color: #092e20; }
   .skills .github:hover {
     color: #4078c0; }
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+  .projects .screenshot {
+    max-height: 350px;
+    max-width: 350px;
+    padding-right: 10px;
+    padding-top: 10px; }
+    .projects .screenshot img {
+      max-height: 100%;
+      max-width: 100%; }
 
 nav {
   background-color: white !important;
