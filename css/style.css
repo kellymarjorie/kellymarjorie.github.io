@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One");
 @import url("https://fonts.googleapis.com/css?family=Lalezar");
 body {
-  padding-top: 60px; }
+  padding-top: 60px;
+  padding-bottom: 100px; }
 
 .title {
   text-align: center;
@@ -16,9 +17,10 @@ body {
 .img-circle {
   height: 180px; }
 
+.bio {
+  padding-bottom: 50px; }
+
 .icons {
-  padding-top: 30px;
-  padding-bottom: 80px;
   font-size: 60px;
   text-align: center; }
   .icons a {
@@ -53,5 +55,15 @@ body {
     color: #092e20; }
   .skills .github:hover {
     color: #4078c0; }
+
+nav {
+  background-color: white !important;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  nav .navbar.navbar-default.navbar-fixed-bottom {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
