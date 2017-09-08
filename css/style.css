@@ -66,10 +66,109 @@ body {
     max-height: 350px;
     max-width: 350px;
     padding-right: 10px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    text-align: center; }
     .projects .screenshot img {
       max-height: 100%;
       max-width: 100%; }
+    .projects .screenshot .project-title {
+      text-align: center;
+      padding-bottom: 3px; }
+    .projects .screenshot button {
+      margin: 5px;
+      padding: 5px;
+      background-color: transparent;
+      border: 1px solid #e34f26;
+      border-radius: 3px;
+      color: #e34f26;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      transition: .3s;
+      cursor: default; }
+      .projects .screenshot button:after {
+        outline: none;
+        box-shadow: none;
+        position: absolute;
+        transition: .3s;
+        content: '';
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        height: 4px; }
+      .projects .screenshot button:hover {
+        outline: none; }
+        .projects .screenshot button:hover:after {
+          outline: none;
+          width: 100%;
+          left: 0;
+          content: ''; }
+
+.blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center; }
+
+.tech {
+  flex: 1 1 auto;
+  margin: 3px;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: .3s; }
+
+.html {
+  color: #e34f26; }
+
+.html:hover {
+  border-bottom: 2px solid #e34f26;
+  transition: .3s; }
+
+.css {
+  color: #0079C6; }
+  .css .css:hover {
+    border-bottom: 2px solid #0079C6;
+    transition: .3s; }
+
+.boots {
+  color: #563D7C; }
+  .boots .boots:hover {
+    border-bottom: 2px solid #563D7C;
+    transition: .3s; }
+
+.jq {
+  color: #0769ad; }
+  .jq .jq:hover {
+    border-bottom: 2px solid #0769ad;
+    transition: .3s; }
+
+.owm {
+  color: #FE7900; }
+  .owm .owm:hover {
+    border-bottom: 2px solid #FE7900;
+    transition: .3s; }
+
+.twitch {
+  color: #6441A4; }
+  .twitch .twitch:hover {
+    border-bottom: 2px solid #6441A4;
+    transition: .3s; }
+
+.wikipedia {
+  color: #858585; }
+  .wikipedia .wikipedia:hover {
+    border-bottom: 2px solid #858585;
+    transition: .3s; }
 
 nav {
   background-color: white !important;
