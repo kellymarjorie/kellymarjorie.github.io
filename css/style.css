@@ -66,4 +66,45 @@ p {
 a .bottom-top a:link, :hover, :active {
   text-decoration: none !important; }
 
+hr {
+  color: #d62b23; }
+
+.case-study-header {
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  color: #d62b23; }
+
+.align-right {
+  float: right;
+  padding-bottom: 20px; }
+
+.market-research {
+  text-align: center; }
+
+.market-research-text {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: .85em;
+  letter-spacing: .6px;
+  word-spacing: 2.7px;
+  line-height: 1.5;
+  padding-bottom: 10px; }
+
+.persona-icon {
+  font-size: 3em;
+  text-align: center;
+  color: #CF8BA9; }
+
+.research-questions {
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  letter-spacing: .6px;
+  word-spacing: 2.7px;
+  line-height: 1.5;
+  padding-bottom: 10px; }
+
+.design-img {
+  padding-bottom: 30px; }
+
 /*# sourceMappingURL=style.css.map */
