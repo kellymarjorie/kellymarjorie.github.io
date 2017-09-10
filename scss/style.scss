@@ -1,241 +1,94 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One');
 @import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url("https://fonts.googleapis.com/css?family=Caveat|Raleway");
 
-$primary-colour1: #fed12e;
-$primary-colour2: #d62b23;
-$primary-colour3: #354c59;
-$title-font: 'Bungee Shade', cursive;
-$headline-font: 'Yatra One', cursive;
+
+$primary-colour1: #d62b23;
+$primary-colour3: #CF8BA9;
+$background: #EFF0F7;
+$title-font: 'Caveat', cursive;
+$all-font: 'Raleway', sans-serif;
 
 body {
-    padding-top: 60px;
-    padding-bottom: 120px;
-    color: $primary-colour3;
+    background-color: $background;
+    padding-top: 100px;
 }
 
-.title {
-    text-align: center;
-    color: $primary-colour1;
-    font: 75px $title-font;
-    padding-bottom: 40px;
+.top {
+    padding-bottom: 60px;
+    
 }
 
-.headline {
-    color: $primary-colour2;
-    font: 40px $headline-font;
-}
-
-.img-circle {
-    height: 180px;
+.head {
+    padding-bottom: 20px;
 }
 
 .bio {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
-.icons {    
-    font-size: 60px;
-    text-align: center;
+.my-face {
+    max-width: 200px;    
+    margin: 0 auto;
+}
+
+p {
+    font-family: $all-font;
+    font-size: 1em;
+    letter-spacing:.6px; 
+    word-spacing: 2.7px; 
+    line-height: 1.5;
     a {
         color: $primary-colour1;
-    }
-    a:hover, a:active {
-        color: $primary-colour3;
+        :link,:visited,:hover,:active {
+            color: $primary-colour1 !important;
+        }
     }
 }
 
-.skills {
-    padding-bottom: 50px;
-    text-align: center;
-    color: $primary-colour2;
-    font-size: 140px;
-    .html5:hover {
-        color: #e34f26;
-    }
-    .css3:hover {
-        color: #0079C6;
-    }
-    .js:hover {
-        color: #F0DB4F;
-    }
-    .python:hover {
-        color: #4584b6;
-    }
-    .postgresql:hover {
-        color: #316192;
-    }
-    .git:hover {
-        color: #6e5494;
-    }
-    .bootstrap:hover {
-        color: #563D7C;
-    }
-    .sass:hover {
-        color: #CD679A;
-    }
-    .jquery:hover{
-        color: #0769ad;
-    }
-    .django:hover {
-        color: #092e20;
-    }
-    .github:hover {
-        color: #4078c0;
+.icons {
+    font-size: 35px;
+    padding-top: 30px;
+    a {
+        color: $primary-colour1;
+        text-decoration: none;
+        :hover {
+            color: $primary-colour3;
+            text-decoration: none;
+        }
     }
 }
 
 .projects {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    .screenshot {
-        max-height: 350px;
-        max-width: 350px;
-        padding-right: 10px;
-        padding-top: 10px;
-        text-align: center;
-        img {
-            max-height: 100%;
-            max-width: 100%;
-        }
-
-        .project-title {
-            text-align: center;
-            padding-bottom: 3px;
-        }
-        
-        button {
-            margin: 5px;
-            padding: 5px;
-            background-color: transparent;
-            border: 1px solid #e34f26;
-            border-radius: 3px;
-            color: #e34f26;
-            text-align: center;
-            text-transform: uppercase;
-            position: relative;
-            overflow: hidden;
-            transition: .3s;
-            cursor: default;
-            &:after {
-                outline: none;
-                box-shadow: none;
-                position: absolute;
-                transition: .3s;
-                content: '';
-                width: 0;
-                left: 50%;
-                bottom: 0;
-                height: 4px;
-            }
-            &:hover {
-                outline: none;
-                &:after{
-                    outline: none;
-                    width: 100%;
-                    left: 0;
-                    content: '';
-                }
-            }
-        }
-    }
-}
-.blurb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    text-transform: uppercase;
-    text-align: center;
-    
-}
-.tech {
-    flex: 1 1 auto;
-    margin: 3px;
-    padding: 5px;
-    background-color: transparent;
-    border-radius: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    transition: .3s;
-}
-.html {
-    //border: 1px solid #e34f26;
-    color: #e34f26;
-    
-}
-.html:hover {
-        border-bottom: 2px solid #e34f26;
-        transition: .3s;
-    }
-
-.css {
-    //border: 1px solid #0079C6;
-    color: #0079C6;
-    .css:hover {
-        border-bottom: 2px solid #0079C6;
-        transition: .3s;
-    }
+    background-color: #fff;
+    width: 100%;
 }
 
-.boots {
-    //border: 1px solid #563D7C;
-    color: #563D7C;
-    .boots:hover {
-        border-bottom: 2px solid #563D7C;
-        transition: .3s;
-    }
+.header {
+    font-family: $title-font;
+    color: $primary-colour1;
+    font-size: 3.5em;
+    padding-bottom: 30px;
 }
 
-.jq {
-    //border: 1px solid #0769ad;
-    color: #0769ad;
-    .jq:hover {
-        border-bottom: 2px solid #0769ad;
-        transition: .3s;
-    }
-}
-
-.owm {
-    //border: 1px solid #FE7900;
-    color: #FE7900;
-    .owm:hover {
-        border-bottom: 2px solid #FE7900;
-        transition: .3s;
-    }
-}
-
-.twitch {
-    //border: 1px solid #6441A4;
-    color: #6441A4;
-    .twitch:hover {
-        border-bottom: 2px solid #6441A4;
-        transition: .3s;
-    }
-}
-
-.wikipedia {
-    //border: 1px solid #858585;
-    color: #858585;
-    .wikipedia:hover {
-        border-bottom: 2px solid #858585;
-        transition: .3s;
-    }
-}
-
-nav {
-    background-color: white !important;
+.thumbnail {
+    background-color: #fff;
     border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    .navbar.navbar-default.navbar-fixed-bottom {
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
+    text-align: center;
+    padding-bottom: 50px;
+    img {
+        max-width: 300px;
+        :hover{
+            transition: .3s;
+        }
     }
+}
+
+.bottom-top {
+    font-family: $title-font;
+    color: $primary-colour1;
+}
+
+a .bottom-top a:link, :hover, :active {
+    text-decoration: none !important;
 }
