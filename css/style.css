@@ -1,183 +1,69 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One");
 @import url("https://fonts.googleapis.com/css?family=Lalezar");
+@import url("https://fonts.googleapis.com/css?family=Caveat|Raleway");
 body {
-  padding-top: 60px;
-  padding-bottom: 120px;
-  color: #354c59; }
+  background-color: #EFF0F7;
+  padding-top: 100px; }
 
-.title {
-  text-align: center;
-  color: #fed12e;
-  font: 75px "Bungee Shade", cursive;
-  padding-bottom: 40px; }
+.top {
+  padding-bottom: 60px; }
 
-.headline {
-  color: #d62b23;
-  font: 40px "Yatra One", cursive; }
-
-.img-circle {
-  height: 180px; }
+.head {
+  padding-bottom: 20px; }
 
 .bio {
-  padding-bottom: 50px; }
+  padding-bottom: 30px; }
+
+.my-face {
+  max-width: 200px;
+  margin: 0 auto; }
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  letter-spacing: .6px;
+  word-spacing: 2.7px;
+  line-height: 1.5; }
+  p a {
+    color: #d62b23; }
+    p a :link, p a :visited, p a :hover, p a :active {
+      color: #d62b23 !important; }
 
 .icons {
-  font-size: 60px;
-  text-align: center; }
+  font-size: 35px;
+  padding-top: 30px; }
   .icons a {
-    color: #fed12e; }
-  .icons a:hover, .icons a:active {
-    color: #354c59; }
-
-.skills {
-  padding-bottom: 50px;
-  text-align: center;
-  color: #d62b23;
-  font-size: 140px; }
-  .skills .html5:hover {
-    color: #e34f26; }
-  .skills .css3:hover {
-    color: #0079C6; }
-  .skills .js:hover {
-    color: #F0DB4F; }
-  .skills .python:hover {
-    color: #4584b6; }
-  .skills .postgresql:hover {
-    color: #316192; }
-  .skills .git:hover {
-    color: #6e5494; }
-  .skills .bootstrap:hover {
-    color: #563D7C; }
-  .skills .sass:hover {
-    color: #CD679A; }
-  .skills .jquery:hover {
-    color: #0769ad; }
-  .skills .django:hover {
-    color: #092e20; }
-  .skills .github:hover {
-    color: #4078c0; }
+    color: #d62b23;
+    text-decoration: none; }
+    .icons a :hover {
+      color: #CF8BA9;
+      text-decoration: none; }
 
 .projects {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center; }
-  .projects .screenshot {
-    max-height: 350px;
-    max-width: 350px;
-    padding-right: 10px;
-    padding-top: 10px;
-    text-align: center; }
-    .projects .screenshot img {
-      max-height: 100%;
-      max-width: 100%; }
-    .projects .screenshot .project-title {
-      text-align: center;
-      padding-bottom: 3px; }
-    .projects .screenshot button {
-      margin: 5px;
-      padding: 5px;
-      background-color: transparent;
-      border: 1px solid #e34f26;
-      border-radius: 3px;
-      color: #e34f26;
-      text-align: center;
-      text-transform: uppercase;
-      position: relative;
-      overflow: hidden;
-      transition: .3s;
-      cursor: default; }
-      .projects .screenshot button:after {
-        outline: none;
-        box-shadow: none;
-        position: absolute;
-        transition: .3s;
-        content: '';
-        width: 0;
-        left: 50%;
-        bottom: 0;
-        height: 4px; }
-      .projects .screenshot button:hover {
-        outline: none; }
-        .projects .screenshot button:hover:after {
-          outline: none;
-          width: 100%;
-          left: 0;
-          content: ''; }
+  background-color: #fff;
+  width: 100%; }
 
-.blurb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  text-transform: uppercase;
-  text-align: center; }
+.header {
+  font-family: "Caveat", cursive;
+  color: #d62b23;
+  font-size: 3.5em;
+  padding-bottom: 30px; }
 
-.tech {
-  flex: 1 1 auto;
-  margin: 3px;
-  padding: 5px;
-  background-color: transparent;
-  border-radius: 3px;
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-  transition: .3s; }
-
-.html {
-  color: #e34f26; }
-
-.html:hover {
-  border-bottom: 2px solid #e34f26;
-  transition: .3s; }
-
-.css {
-  color: #0079C6; }
-  .css .css:hover {
-    border-bottom: 2px solid #0079C6;
-    transition: .3s; }
-
-.boots {
-  color: #563D7C; }
-  .boots .boots:hover {
-    border-bottom: 2px solid #563D7C;
-    transition: .3s; }
-
-.jq {
-  color: #0769ad; }
-  .jq .jq:hover {
-    border-bottom: 2px solid #0769ad;
-    transition: .3s; }
-
-.owm {
-  color: #FE7900; }
-  .owm .owm:hover {
-    border-bottom: 2px solid #FE7900;
-    transition: .3s; }
-
-.twitch {
-  color: #6441A4; }
-  .twitch .twitch:hover {
-    border-bottom: 2px solid #6441A4;
-    transition: .3s; }
-
-.wikipedia {
-  color: #858585; }
-  .wikipedia .wikipedia:hover {
-    border-bottom: 2px solid #858585;
-    transition: .3s; }
-
-nav {
-  background-color: white !important;
+.thumbnail {
+  background-color: #fff;
   border: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-  nav .navbar.navbar-default.navbar-fixed-bottom {
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+  text-align: center;
+  padding-bottom: 50px; }
+  .thumbnail img {
+    max-width: 300px; }
+    .thumbnail img :hover {
+      transition: .3s; }
+
+.bottom-top {
+  font-family: "Caveat", cursive;
+  color: #d62b23; }
+
+a .bottom-top a:link, :hover, :active {
+  text-decoration: none !important; }
 
 /*# sourceMappingURL=style.css.map */
