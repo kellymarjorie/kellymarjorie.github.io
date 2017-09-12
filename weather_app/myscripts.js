@@ -8,10 +8,10 @@ $(document).ready(function() {
     var thunderstorm = 'ion-ios-thunderstorm-outline';
     var snowy = 'ion-ios-snowy';
        
-    $.getJSON("http://ip-api.com/json", function(json) {
+    $.getJSON("https://ip-api.com/json", function(json) {
         lon = json.lon;
         lat = json.lat;
-        var apiURL = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=bff0b7a9a7566e0c8b493ea9b3feb4e1";
+        var apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=bff0b7a9a7566e0c8b493ea9b3feb4e1";
 
         $.getJSON(apiURL, function(data) {
 
