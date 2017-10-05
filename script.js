@@ -19,6 +19,7 @@ $(document).ready(function() {
 
     $("#all-work").click(function() {
         // show all work
+        $("#display").html("");
         $("#display").append(projects);
     });
 
