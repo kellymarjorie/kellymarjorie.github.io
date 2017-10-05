@@ -1,78 +1,103 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One");
 @import url("https://fonts.googleapis.com/css?family=Lalezar");
 @import url("https://fonts.googleapis.com/css?family=Caveat|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
-  background-color: #EFF0F7;
-  padding-top: 100px; }
+  padding-top: 70px; }
 
-.top {
-  padding-bottom: 60px; }
-
-.head {
+nav {
+  padding-right: 60px;
   padding-bottom: 20px; }
+  nav .nav-link {
+    font-family: "Share Tech Mono", monospace;
+    color: #0C120C; }
+  nav .active {
+    text-decoration: line-through; }
+    nav .active :hover {
+      text-decoration: line-through; }
 
-.bio {
-  padding-bottom: 30px; }
+p.lead.bold {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5em; }
+  p.lead.bold .em {
+    font-weight: bold;
+    color: #F0A202; }
+  p.lead.bold a {
+    color: #F0A202 !important; }
 
-.my-face {
-  max-width: 200px;
-  margin: 0 auto; }
-
-p {
-  font-family: "Raleway", sans-serif;
-  font-size: 1em;
-  letter-spacing: .6px;
-  word-spacing: 2.7px;
-  line-height: 1.5; }
-  p a {
-    color: #d62b23; }
-    p a :link, p a :visited, p a :hover, p a :active {
-      color: #d62b23 !important; }
-
-.icons {
-  font-size: 35px;
-  padding-top: 30px; }
-  .icons a {
-    color: #d62b23;
+ul.list-inline {
+  padding-bottom: 20px;
+  font-size: 2em; }
+  ul.list-inline a {
+    color: #D7263D;
     text-decoration: none; }
-    .icons a :hover {
-      color: #CF8BA9;
+    ul.list-inline a :hover {
+      color: #D7263D;
       text-decoration: none; }
 
+.navigate a {
+  font-size: 4em;
+  color: #F0A202;
+  padding-bottom: 40px; }
+  .navigate a :hover {
+    color: #F0A202; }
+
 .projects {
-  background-color: #fff;
-  width: 100%; }
-
-.header {
-  font-family: "Caveat", cursive;
-  color: #d62b23;
+  font-family: "Share Tech Mono", monospace;
+  color: #F0A202;
   font-size: 3.5em;
-  padding-bottom: 30px; }
+  padding-bottom: 60px; }
 
-.thumbnail {
-  background-color: #fff;
-  border: 0;
-  text-align: center;
-  padding-bottom: 50px; }
-  .thumbnail img {
-    max-width: 300px; }
-    .thumbnail img :hover {
-      transition: .3s; }
+.project-tags {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.5em;
+  text-align: right;
+  padding-bottom: 60px; }
+  .project-tags a {
+    font-size: 0.5em;
+    color: #D7263D;
+    cursor: pointer; }
+    .project-tags a .active {
+      text-decoration: line-through; }
 
-.bottom-top {
-  font-family: "Caveat", cursive;
-  color: #d62b23; }
+figure {
+  padding-bottom: 50px;
+  display: block; }
+  figure img {
+    max-width: 300px;
+    max-height: 300px; }
+  figure figcaption {
+    font-family: "Roboto", sans-serif; }
+    figure figcaption .tags {
+      font-size: 0.8em; }
+    figure figcaption a {
+      color: #D7263D; }
+      figure figcaption a :link, figure figcaption a :hover, figure figcaption a :active {
+        color: #D7263D !important;
+        text-decoration: none; }
 
-a .bottom-top a:link, :hover, :active {
-  text-decoration: none !important; }
+p.bio {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.5;
+  letter-spacing: 1.25px;
+  font-weight: lighter; }
+
+img.pro-pic {
+  max-width: 300px; }
 
 hr {
-  color: #d62b23; }
+  color: #D7263D; }
 
 .case-study-header {
-  font-family: "Caveat", cursive;
+  font-family: "Share Tech Mono", monospace;
   font-size: 60px;
-  color: #d62b23; }
+  color: #D7263D; }
 
 .align-right {
   float: right;
@@ -83,7 +108,7 @@ hr {
 
 .market-research-text {
   list-style: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: .85em;
   letter-spacing: .6px;
   word-spacing: 2.7px;
@@ -93,11 +118,11 @@ hr {
 .persona-icon {
   font-size: 3em;
   text-align: center;
-  color: #CF8BA9; }
+  color: #F0A202; }
 
 .research-questions {
   list-style: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   letter-spacing: .6px;
   word-spacing: 2.7px;

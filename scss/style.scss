@@ -1,97 +1,131 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One');
 @import url('https://fonts.googleapis.com/css?family=Lalezar');
 @import url("https://fonts.googleapis.com/css?family=Caveat|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
-$primary-colour1: #d62b23;
-$primary-colour3: #CF8BA9;
+$primary-colour1: #D7263D;
+$primary-colour2: #F0A202;
+$primary-colour3: #0C120C;
 $background: #EFF0F7;
-$title-font: 'Caveat', cursive;
-$all-font: 'Raleway', sans-serif;
+$title-font: 'Share Tech Mono', monospace;
+$body-font: 'Roboto', sans-serif;
 
 body {
-    background-color: $background;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
-.top {
-    padding-bottom: 60px;
-    
-}
-
-.head {
+nav {
+    padding-right: 60px;
     padding-bottom: 20px;
-}
-
-.bio {
-    padding-bottom: 30px;
-}
-
-.my-face {
-    max-width: 200px;    
-    margin: 0 auto;
-}
-
-p {
-    font-family: $all-font;
-    font-size: 1em;
-    letter-spacing:.6px; 
-    word-spacing: 2.7px; 
-    line-height: 1.5;
-    a {
-        color: $primary-colour1;
-        :link,:visited,:hover,:active {
-            color: $primary-colour1 !important;
+    .nav-link {
+    font-family: $title-font;
+    color: $primary-colour3;
+    }
+    .active {
+        text-decoration: line-through;
+        :hover {
+            text-decoration: line-through;
         }
+    }
+
+}
+
+p.lead.bold {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    font-family: $body-font;
+    font-size: 3.5em;
+    .em {
+        font-weight: bold;
+        color: $primary-colour2;
+    }
+    a {
+        color: $primary-colour2 !important;
     }
 }
 
-.icons {
-    font-size: 35px;
-    padding-top: 30px;
+ul.list-inline {
+    padding-bottom: 20px;
+    font-size: 2em;
     a {
         color: $primary-colour1;
         text-decoration: none;
         :hover {
-            color: $primary-colour3;
+            color: $primary-colour1;
             text-decoration: none;
         }
     }
 }
 
+.navigate a {
+    font-size: 4em;
+    color: $primary-colour2;
+    padding-bottom: 40px;
+    :hover {
+        color: $primary-colour2;
+    }
+}
+
 .projects {
-    background-color: #fff;
-    width: 100%;
-}
-
-.header {
     font-family: $title-font;
-    color: $primary-colour1;
+    color: $primary-colour2;
     font-size: 3.5em;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
-.thumbnail {
-    background-color: #fff;
-    border: 0;
-    text-align: center;
-    padding-bottom: 50px;
-    img {
-        max-width: 300px;
-        :hover{
-            transition: .3s;
+.project-tags {
+    font-family: $title-font;
+    font-size: 0.5em;
+    text-align: right;
+    padding-bottom: 60px;
+    a {
+        font-size: 0.5em;
+        color: $primary-colour1;
+        cursor: pointer;
+        .active {
+            text-decoration: line-through;
         }
     }
 }
 
-.bottom-top {
-    font-family: $title-font;
-    color: $primary-colour1;
+figure {
+    padding-bottom: 50px;
+    display: block;
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    figcaption {
+        font-family: $body-font;
+        .tags {
+            font-size: 0.8em;
+        }
+        a {
+            color: $primary-colour1;
+            :link, :hover, :active {
+                color: $primary-colour1 !important;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-a .bottom-top a:link, :hover, :active {
-    text-decoration: none !important;
+p.bio {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    font-family: $body-font;
+    font-size: 1.75em;
+    line-height: 1.5;
+    letter-spacing: 1.25px;
 }
+
+img.pro-pic {
+    max-width: 300px;
+}
+
+// below all for the mystreet page.
 
 hr {
     color: $primary-colour1;
@@ -114,7 +148,7 @@ hr {
 
 .market-research-text {
     list-style: none;
-    font-family: $all-font;
+    font-family: $body-font;
     font-size: .85em;
     letter-spacing:.6px; 
     word-spacing: 2.7px; 
@@ -125,12 +159,12 @@ hr {
 .persona-icon {
     font-size: 3em;
     text-align: center;
-    color: $primary-colour3;
+    color: $primary-colour2;
 }
 
 .research-questions {
     list-style: none;
-    font-family: $all-font;
+    font-family: $body-font;
     font-size: 1em;
     letter-spacing:.6px; 
     word-spacing: 2.7px; 
