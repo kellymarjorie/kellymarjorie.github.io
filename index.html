@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Kelly Marjorie Williams</title>
+        <link rel="shortcut icon" href="images/unicorn-face.png" />
+        <title>Kelly Williams</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">        
         <link rel='stylesheet' href='css/style.css'> <!-- local css -->
         <script src="https://use.fontawesome.com/ed2735a033.js"></script>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -16,182 +16,93 @@
     </head>
 
     <body>
-        <div class='container top' id='top'>                
-            
-            <img src='images/head.png' alt='Kelly Williams' class='img-responsive head'>
-            <div class='row'>
-                <div class='col-md-8 bio'>
-                    <p class='lead'>Hi. I'm a designer based in New Zealand.</p>
-                    <p>I have a working history based on listening to and understanding people - what they want, how they can get there, where the hurdles are. I began as an artist with a Bachelor of Fine Arts, and luck has taken me around the world and into the IT industry where I learnt the foundation of my role was asking the right questions and learning what the user actually wanted. All my experience has brought me to the point of realising that user experience is completely dependent on successful design - of everything. Transistioning into web design allows me to bring all my life experiences together to apply them professionally.</p>
+        <nav class='nav justify-content-end' id='top'>
+            <a class='nav-link active' href='index.html'>portfolio</a>
+            <a class='nav-link' href='bio.html'>bio</a>
+            <a class='nav-link' href='mailto:kellymarjoriewilliams@gmail.com?subject=Hi there, want to work together?'>contact</a>
+        </nav>
 
-                </div>
-                <div class='col-md-4'>
-                    <img src='images/12217590.jpeg' alt='My face' class='img-circle img-responsive my-face'>
+        <div class='container'>   
+            <div class='row justify-content-center'>
+                <div class='col-8'>
+                    <p class='lead bold'>Hi. I'm <span class='em'>Kelly Williams</span>. I'm a <span class='em'>web designer and developer</span> based in New Zealand.</p>
                 </div>
             </div>
-            
-            <div class='icons'>
-                <ul class='list-inline'>
-                    <li><a href="mailto:kellymarjoriewilliams@gmail.com?subject=Let's work together!"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                    <li><a href='https://github.com/kellymarjorie' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
-                    <li><a href='https://www.linkedin.com/in/kelly-williams-43651577/' target='_blank'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                    <li><a href='https://www.behance.net/kellymarjo9085' target='_blank'><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                    <li><p><a href='https://github.com/kellymarjorie/kellymarjorie.github.io/blob/master/Kelly_Williams_CV2017.pdf' target='_blank'>CV</a></p></li>
+ 
+            <div class='row'>
+                <div class='col-6'>
+                    <ul class='list-inline'>
+                        <li class='list-inline-item'><a href="mailto:kellymarjoriewilliams@gmail.com?subject=Let's work together!"><i class="fa fa-envelope" aria-hidden="true"></i></a> </li>
+                        <li class='list-inline-item'><a href='https://github.com/kellymarjorie' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
+                        <li class='list-inline-item'><a href='https://www.linkedin.com/in/kelly-williams-43651577/' target='_blank'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> </li>
+                        <li class='list-inline-item'><a href='https://www.behance.net/kellymarjo9085' target='_blank'><i class="fa fa-behance" aria-hidden="true"></i></a> </li>
+                        <li class='list-inline-item'><a href='https://www.instragram.com/kellymarjorie_' target='_blank'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>                            
+                        <li class='list-inline-item'><a href='https://github.com/kellymarjorie/kellymarjorie.github.io/blob/master/Kelly_Williams_CV2017.pdf' target='_blank'>Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class='row justify-content-center'>
+                <div class='col-1 navigate'>
+                    <a href='#projects'><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div> <!-- container end -->
+
+    <div class='container' id='projects'>
+        <div class='row justify-content-between project-nav'>
+            <div class='col-2'>
+                <span class='projects'>projects</span>
+            </div>
+            <div class='col-5'>
+                <ul class='list-inline project-tags'>
+                    <li class='list-inline-item'><a id='all-work'>all work</a></li> <!-- add strike through for active tags -->
+                    <li class='list-inline-item'><a id='web-work'>web</a></li>
+                    <li class='list-inline-item'><a id='mobile-work'>mobile</a></li>
+                    <!-- to add when jquery grep functionality is working
+                    <li class='list-inline-item'><a id='ui-ux-work'>ui/ux</a></li>
+                    <li class='list-inline-item'><a id='adobe-cs-work'>adobe cs</a></li>
+                    <li class='list-inline-item'><a id='javascript-work'>javascript</a></li>
+                    <li class='list-inline-item'><a id='sass-work'>sass</a></li>
+                    <li class='list-inline-item'><a id='bootstrap-work'>bootstrap</a></li>
+                    <li class='list-inline-item'><a id='api-work'>api</a></li> --> 
+                    <li class='list-inline-item'><a id='illustration-work'>illustration</a></li>
                 </ul>
             </div>
-
-        </div> <!-- container end -->
-
-    <div class='projects'>
-        <div class='container'>
-            <h2 class='header'>Projects</h2>
-            <div class='row'>
-                <div class='col-md-3'></div>
-                <div class='col-md-6 center-block'>
-                    <div class='thumbnail'>
-                        <a href='mystreet.html'> <!-- same tab link -->
-                            <img src='images/logo.jpg' class='img-rounded .hvr-shadow-radial' alt='My Street'>
-                        </a>
-                        <div class='caption'>
-                            <p>case study || My Street</br>
-                                A peer to peer item lending app for small communities
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-3'></div>
-            </div>
-
         </div>
-        
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md-1 center-block'></div>
-                <div class='col-md-3 center-block'>
-                    <div class='thumbnail'>
-                        <a href='https://www.behance.net/gallery/56774019/Daily-UI-001' target='_blank'>
-                            <img src='images/dailyui001thumbnail.png' class='img-rounded' alt='Daily UI 001'>
-                        </a>
-                        <div class='caption'>
-                            <p>ui practice || sign up page</p>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-3 center-block'>
-                    <div class='thumbnail'>
-                        <a href='https://www.behance.net/gallery/56801587/Daily-UI-002' target='_blank'> 
-                            <img src='images/dailyui002thumbnail.png' class='img-rounded' alt='Daily UI 002'>
-                        </a>
-                        <div class='caption'>
-                            <p>ui practice || credit card checkout</p>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-3 center-block'>
-                    <div class='thumbnail'>
-                        <a href='https://www.behance.net/gallery/56825017/Daily-UI-003' target='_blank'> 
-                            <img src='images/dailyui003thumbnail.png' class='img-rounded' alt='Daily UI 003'>
-                        </a>
-                        <div class='caption'>
-                            <p>ui practice || landing page</p>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-1'></div>
-            </div>
-        </div> <!-- container end -->
 
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md-3'>
-                    <div class='thumbnail'>
-                        <a href='weather_app/index.html' target='_blank' class='.hvr-shadow-radial'>
-                            <img src="images/weather_app.png" class='img-rounded' alt="Weather App">
-                        </a>
-                        <div class='caption'>
-                            <p><a href='https://codepen.io/kellymarjorie/full/ybbEOy/' target='_blank'>codepen</a> || Local Weather</br>
-                                An interactive web app to show your local weather information.</br>
-                            <a href='https://github.com/kellymarjorie/weather_app' target='_blank'>View code</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class='col-md-3'>
-                    <div class='thumbnail'>
-                        <a href='random_quote_generator/index.html' target='_blank' class='hvr-overline-from-center'>
-                            <img src='images/quote_generator.png' class='img-rounded' alt='Parks & Rec Quote Generator'>
-                        </a>
-                        <div class='caption'>
-                            <p><a href='https://codepen.io/kellymarjorie/full/oWYPeE/' target='_blank'>codepen</a> || Random Quote</br>
-                                A random quote generator for the TV show Parks & Recreation. Tweet your favourite quote with the Twitter plug-in.</br>
-                            <a href='https://github.com/kellymarjorie/random_quote_generator' target='_blank'>View code</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class='col-md-3'>
-                    <div class='thumbnail'>
-                        <a href='twitchtv_app/index.html' target='_blank' class='hvr-overline-from-center'>
-                            <img src='images/twitchtv_app.png' class='img-rounded' alt="TwitchTV Feed">
-                        </a>
-                        <div class='caption'>
-                            <p><a href='https://codepen.io/kellymarjorie/full/MmVdLr/' target='_blank'>codepen</a> || TwitchTV Channels</br>
-                                View a list of channels and filter if they are online or offline. See what they are streaming and how many are watching. Search for new TwitchTV channels to follow.</br>
-                            <a href='https://github.com/kellymarjorie/twitchtv_app' target='blank'>View code</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class='col-md-3'>
-                    <div class='thumbnail'>
-                        <a href='wikipedia_viewer/index.html' target='_blank' class='hvr-overline-from-center'>
-                            <img src='images/wikipedia_app.png' class='img-rounded' alt='Wikipedia Search'>
-                        </a>
-                        <div class='caption'>
-                            <p><a href='https://codepen.io/kellymarjorie/full/qmxRjZ/' target='_blank'>codepen</a> || Wikipedia Search</br>
-                                Search for Wikipedia articles on any topic, or pull up a random article.</br>
-                            <a href='https://github.com/kellymarjorie/wikipedia_viewer' target='_blank'>View code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- container end -->
-
-        <div class='container'>
-            <div class='row'>
-                <div class='col-md-3'></div>
-                <div class='col-md-3 center-block'>
-                    <div class='thumbnail'>
-                        <a href='https://www.behance.net/gallery/56699477/flat-white' target='_blank'>
-                            <img src='images/flatwhite.jpg' class='img-rounded' alt='coffee'>
-                        </a>
-                        <div class='caption'>
-                            <p>illustration || flat white
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-3 center-block'>
-                    <div class='thumbnail'>
-                        <a href='https://www.behance.net/gallery/56801679/Flat-lay-clothes-illustration' target='_blank'> 
-                            <img src='images/flat-lay-thumbnail.png' class='img-rounded' alt='flat lay clothes thumbnail'>
-                        </a>
-                        <div class='caption'>
-                            <p>illustration || clothes flat lay
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class='col-md-3'></div>
-            </div>
-        </div> <!-- container end -->
-    </div>
+        <div class='row justify-content-center' id='display'>
+        </div>
+    </div> <!-- projects end -->
 
     <div class='container'>
-        <a href='#top'><h1 class='bottom-top'><i class="fa fa-angle-up" aria-hidden="true"></i> Top</h1></a>
+        <div class='row justify-content-center'>
+            <div class='col-8'>
+                <p class='lead bold'>Like what you see? Let's work <a href="mailto:kellymarjoriewilliams@gmail.com?subject=Let's work together!"><span class='em'>together</span></a>.</p>
+            </div>
+        </div>
+
+        <div class='row justify-content-between'>
+            <div class='col-6'>
+                <ul class='list-inline'>
+                    <li class='list-inline-item'><a href="mailto:kellymarjoriewilliams@gmail.com?subject=Let's work together!"><i class="fa fa-envelope" aria-hidden="true"></i></a> </li>
+                    <li class='list-inline-item'><a href='https://github.com/kellymarjorie' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
+                    <li class='list-inline-item'><a href='https://www.linkedin.com/in/kelly-williams-43651577/' target='_blank'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> </li>
+                    <li class='list-inline-item'><a href='https://www.behance.net/kellymarjo9085' target='_blank'><i class="fa fa-behance" aria-hidden="true"></i></a> </li>
+                    <li class='list-inline-item'><a href='https://www.instragram.com/kellymarjorie_' target='_blank'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class='list-inline-item'><a href='https://github.com/kellymarjorie/kellymarjorie.github.io/blob/master/Kelly_Williams_CV2017.pdf' target='_blank'>Resume</a></li>
+                </ul>
+            </div>
+            <div class='col-2 navigate'>
+                <a href='#top'><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src='script.js'></script>
     </body>
 
 </html>
