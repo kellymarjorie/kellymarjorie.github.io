@@ -9,17 +9,21 @@ body {
 nav {
   padding-right: 60px;
   padding-bottom: 20px; }
-  nav .nav-link {
-    font-family: "Share Tech Mono", monospace;
-    color: #0C120C; }
-  nav .active {
+
+a.nav-link {
+  font-family: "Share Tech Mono", monospace;
+  color: #0C120C; }
+  a.nav-link :hover, a.nav-link :active {
+    color: #D7263D !important;
+    text-decoration: none; }
+
+a.nav-link.active {
+  text-decoration: line-through !important; }
+  a.nav-link.active :hover {
     text-decoration: line-through; }
-    nav .active :hover {
-      text-decoration: line-through; }
 
 p.lead.bold {
   padding-top: 60px;
-  padding-bottom: 100px;
   font-family: "Roboto", sans-serif;
   font-size: 3.5em; }
   p.lead.bold .em {
@@ -28,9 +32,15 @@ p.lead.bold {
   p.lead.bold a {
     color: #F0A202 !important; }
 
+.gap-above {
+  padding-top: 100px; }
+
+.project-nav {
+  padding-bottom: 40px; }
+
 ul.list-inline {
   padding-bottom: 20px;
-  font-size: 2em; }
+  font-size: 25px; }
   ul.list-inline a {
     color: #D7263D;
     text-decoration: none; }
@@ -79,17 +89,19 @@ figure {
         color: #D7263D !important;
         text-decoration: none; }
 
-p.bio {
+div.bio {
   padding-top: 60px;
   padding-bottom: 100px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.75em;
-  line-height: 1.5;
-  letter-spacing: 1.25px;
-  font-weight: lighter; }
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 1.25px; }
+  div.bio .lead-bio {
+    font-size: 17px; }
 
 img.pro-pic {
-  max-width: 300px; }
+  max-width: 300px;
+  padding-top: 30px; }
 
 hr {
   color: #D7263D; }
