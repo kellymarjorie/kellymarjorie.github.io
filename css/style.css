@@ -61,17 +61,17 @@ ul.list-inline {
   font-size: 3.5em;
   padding-bottom: 60px; }
 
+.strike-through {
+  text-decoration: line-through !important; }
+
 .project-tags {
   font-family: "Share Tech Mono", monospace;
-  font-size: 0.5em;
   text-align: right;
   padding-bottom: 60px; }
   .project-tags a {
-    font-size: 0.5em;
+    font-size: 15px;
     color: #D7263D;
     cursor: pointer; }
-    .project-tags a .active {
-      text-decoration: line-through; }
 
 figure {
   padding-bottom: 50px;

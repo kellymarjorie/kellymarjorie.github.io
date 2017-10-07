@@ -13,9 +13,10 @@ $(document).ready(function() {
         "<div class='col-3 mobile ui-ux adobe-cs'> <figure class='figure'> <a href='https://www.behance.net/gallery/56972993/Daily-UI-004' target='_blank'> <img src='images/dailyui004a.png' class='figure-img img-fluid rounded' alt='Daily UI 004'> </a> <figcaption class='figure-caption'> <p>ui practice || currency converter<br> <small>mobile, ui/ux, adobe cs</small></p> </figcaption> </figure> </div>",
         "<div class='col-3 adobe-cs illustration'> <figure class='figure'> <a href='https://www.behance.net/gallery/56699477/flat-white' target='_blank'> <img src='images/flatwhite.jpg' class='figure-img img-fluid rounded' alt='coffee'> </a> <figcaption class='figure-caption'> <p>illustration || flat white<br> <small>illustration, adobe cs</small></p> </figcaption> </figure> </div>",
         "<div class='col-3 adobe-cs illustration'> <figure class='figure'> <a href='https://www.behance.net/gallery/56801679/Flat-lay-clothes-illustration' target='_blank'> <img src='images/flat-lay-thumbnail.png' class='figure-img img-fluid rounded' alt='flat lay clothes thumbnail'> </a> <figcaption class='figure-caption'> <p>illustration || clothes flat lay<br> <small>illustration, adobe cs</small></p> </figcaption> </figure> </div>"
-    ]
+    ];
 
     window.onload = $("#display").append(projects);
+    window.onload = $('#all-work').addClass('strike-through');
 
     $("#all-work").click(function() {
         // show all work
@@ -39,6 +40,11 @@ $(document).ready(function() {
         $(".web").hide();
         $(".mobile").hide();
         $(".illustration").show();
+    });
+
+    $("a[class^='strikeThroughToggle']").click(function() {
+        $("a[class^='strikeThroughToggle']").removeClass('strike-through');
+        $(this).toggleClass('strike-through');
     });
 
 });

@@ -86,18 +86,18 @@ ul.list-inline {
     padding-bottom: 60px;
 }
 
+.strike-through {
+    text-decoration: line-through !important;
+}
+
 .project-tags {
     font-family: $title-font;
-    font-size: 0.5em;
     text-align: right;
     padding-bottom: 60px;
     a {
-        font-size: 0.5em;
+        font-size: 15px;
         color: $primary-colour1;
         cursor: pointer;
-        .active {
-            text-decoration: line-through;
-        }
     }
 }
 
