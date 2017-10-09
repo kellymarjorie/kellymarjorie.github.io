@@ -2,228 +2,339 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Kelly Marjorie Williams</title>
+        <link rel="shortcut icon" href="images/unicorn-face.png" />
+        <title>Kelly Williams</title>
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">        
         <link rel='stylesheet' href='css/style.css'> <!-- local css -->
         <script src="https://use.fontawesome.com/ed2735a033.js"></script>
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     </head>
 
-    <body>
+    <body class='mystreet'>
+        <nav class='nav justify-content-end'>
+            <a class='nav-link' href='index.html'>portfolio</a>
+            <a class='nav-link' href='bio.html'>bio</a>
+            <a class='nav-link' href='mailto:kellymarjoriewilliams@gmail.com?subject=Hi there, want to work together?'>contact</a>
+        </nav>
 
-        <div class='container'>
-            <a href='index.html'><h1 class='bottom-top'><i class="fa fa-angle-left" aria-hidden="true"></i> Back</h1></a>
-        </div>
+        <div class='container'>   
+            <div class='row justify-content-center'>
 
-        <div class='container'>
-            <h1 class='case-study-header'>My Street</br>
-            <small>a UX & UI research and design concept</small></h1>
-        
-            <p class='lead'>A concept derived from a conversation about leading a minimalist lifestyle by buying and wasting less, and the merits of organisations that allow the lending of "things", while reminiscing of the stories we had heard of the previous generation where neighbourhood lending and borrowing was common place. This is a personal project that I worked on alone.</p>
-            <p>Tools used: Trello, pen and paper, draw.io, Sketch, Adobe Photoshop, Principle.</p>
-        </div> <!-- container end -->
+                <div class='col-8'> <!-- page header -->
+                    <p class='lead bold'><span class='em'>My Street</span></p>
+                    <p class='tag-line'><em>a UX & UI reasearch and design concept.</em></p>
+                </div>
 
-        <hr>
+                <div class='col-8 bio'> <!-- concept intro -->
+                    <p>A concept derived from a conversation about leading a minimalist lifestyle by buying and wasting less, and the merits of organisations that allow the lending of "things", while reminiscing of the stories we had heard of the previous generation where neighbourhood lending and borrowing was common place. This is a personal project that I worked on alone.</p>
+                    <p>Tools used: Trello, pen and paper, draw.io, Sketch, Adobe Photoshop, Principle.</p>
+                    <nav class='concept-breadcrumbs'>
+                        <span class="breadcrumb-item active">top</span>
+                        <a class="breadcrumb-item" href="#research">research</a>
+                        <a class="breadcrumb-item" href="#audience">audience</a>
+                        <a class="breadcrumb-item" href="#design">design</a>
+                        <a class="breadcrumb-item" href="#prototype">prototype</a>
+                    </nav>
+                </div>
 
-        <div class='container'>
-                <h2 class='header'>Market Research</h2>
-                <p>Before going any further, it was important to see what was already available in my area/country and how they stacked up to my concept.</p>
-            <div class='row'>
-                <div class='col-md-3'>
-                    <p class='lead market-research'>Public Libraries</p>
-                    <ul class='market-research-text'>
+                <div class='col-8 bio' id='research'> <!-- market research header section -->
+                    <p class='projects'>Market Research</p>
+                    <p>Before going any further, it was important to see what was already available in my area/country and how they stacked up to my concept.</p>
+                    <nav class='concept-breadcrumbs'>
+                        <a class="breadcrumb-item" href='#top'>top</a>
+                        <span class="breadcrumb-item active">research</span>
+                        <a class="breadcrumb-item" href="#audience">audience</a>
+                        <a class="breadcrumb-item" href="#design">design</a>
+                        <a class="breadcrumb-item" href="#prototype">prototype</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class='row justify-content-center'> <!-- market research entities beginning -->
+                <div class='col-3 bio'>
+                    <p class='tag-line'>Public Libraries</p>
+                    <ul>
                         <li>Requires: Membership (free)</li>
                         <li>Availability: Throughout the city, 3rd party apps</li>
                         <li>Products: Books, magazines, newspapers, music CDs, DVDs, hard copy games, eBooks, eMagazines, audio books. All owned by the library, purchases with government funding or donated.</li>
-                        <li>My thoughts: The library is a great resource that allows free lending, but the items are restricted to what only it can provide and this is primarily books/media.</li>
                     </ul>    
                 </div>
-                <div class='col-md-3'>
-                    <p class='lead market-research'>Hire Things</p>
-                    <ul class='market-research-text'>
+                <div class='col-3 bio'>
+                    <p class='tag-line'>Hire Things</p>
+                    <ul>
                         <li>Requires: fee + bond + deposit (+ delivery?) to rent. Four subscriptions to list; free (with 5% success fee), $99, $199, or $299.</li>
                         <li>Availability: Throughout NZ - end users can choose to rent locally, or from venders who can deliver to their city.</li>
                         <li>Products: All lot of different products, but mainly listed by already established rental companies. Also allows the option of requesting items to rent.</li>
-                        <li>My thoughts: The site is very cluttered, with a lot of information. It doesn't give the impression of being very active, and looks to be more a catalogue for rental companies. This would be great for hosting an event (it even has a planner to allow you to organise all the rental items for an event), as it would allow you to see different products from a range of rental companies.</li>
                     </ul>
                 </div>
-                <div class='col-md-3'>
-                    <p class='lead market-research'>Peer Renters</p>
-                    <ul class='market-research-text'>
+                <div class='col-3 bio'>
+                    <p class='tag-line'>Peer Renters</p>
+                    <ul>
                         <li>Requires: app download + 10% finders fee.</li>
                         <li>Availability: US and Canada only.</li>
                         <li>Products: Unable to see what products were, as the app was unavailable in my country. The examples given on the website were person to person renting.</li>
-                        <li>My thoughts: This concept is very similar to what I have, and if it was available in my country it would be a good alternative. The interface example given on the website looked really clean and easy to use, and the set up appeared very simple and straight forward. This app allows renters to ask owners questions, and allows cancelling at any time leading up to the product exchange. End users can search by the map to see whats local, by category, or keyword. Renters and owners can give feedback on each other.</li>
                     </ul>
                 </div>
-                <div class='col-md-3'>
-                    <p class='lead market-research'>Sacramento Library of Things</p>
-                    <ul class='market-research-text'>
+                <div class='col-3 bio'>
+                    <p class='tag-line'>Sacramento Library of Things</p>
+                    <ul>
                         <li>Requires: Sacramento library membership.</li>
                         <li>Availability: US city of Sacramento only</li>
                         <li>Products: a small selection of home hobby, tools, tech to take offsite, as well as some items that can only be used onsite (i.e. 3D printer).</li>
-                        <li> My thoughts: This is the organisation that inspired the conversation I originally had and the concept. It seems fairly straightforward to use this system, and it ties into the library membership which makes it free. They do have a limited selection and are reliant on government funding to buy new items or on donations from the public to increase their inventory. They also have a lending agreement and a minimal age limit.</li>
                     </ul>
                 </div>
+            </div> <!-- end market entities -->
+
+            <div class='row justify-content-center' id='audience'> <!-- audience header section -->
+                <div class='col-8 bio'>
+                    <p class='projects'>Audience</p>
+                    <p>My target audience is a neighbourhood, spanning one or two streets. My user group was formed from people who all live on one street, a cul-de-sac with a mix of new builds and old houses, with tenants and home owners.</p>
+                    <nav class='concept-breadcrumbs'>
+                        <a class="breadcrumb-item" href='#top'>top</a>
+                        <a class="breadcrumb-item" href='#research'>research</a>
+                        <span class="breadcrumb-item active">audience</span>
+                        <a class="breadcrumb-item" href="#design">design</a>
+                        <a class="breadcrumb-item" href="#prototype">prototype</a>
+                    </nav>
+                </div>
             </div>
-        </div> <!-- container end -->
 
-        <hr>
+            <div class='row justify-content-center bio'> <!-- personas beginning -->
+                <div class='col-3'>   
+                    <ul class='list-unstyled'>
+                        <li class='text-center'><span class='persona-icon'><i class="fa fa-users" aria-hidden="true"></i></span></li>
+                        <li class='text-center'>Marty & Gill</li>
+                        <br>
+                        <li>High school teachers, newly wed.</li>
+                        <li>First home owners, less than 1yr</li>
+                        <li>Moved from Auckland.</li>
+                        <li>No kids.</li>
+                    </ul>
+                </div>
+                <div class='col-3'>
+                    <ul class='list-unstyled'>
+                        <li class='text-center'><span class='persona-icon'><i class="fa fa-users" aria-hidden="true"></i></span></li>
+                        <li class='text-center'>Joe & Jane</li>
+                        <br>
+                        <li>Both retired.</li>
+                        <li>Owned and lived on the street for >20yrs</li>
+                        <li>Living alone, with adult children.</li>
+                        <li>Entertain frequently</li>
+                        <li>Planning on selling soon.</li>
+                    </ul>
+                </div>
+                <div class='col-3'>
+                    <ul class='list-unstyled'>
+                        <li class='text-center'><span class='persona-icon'><i class="fa fa-users" aria-hidden="true"></i></span></li>
+                        <li class='text-center'>Sam & Samantha</li>
+                        <br>
+                        <li>Butcher, Stay at home mum.</li>
+                        <li>Long term renters</li>
+                        <li>Immigrants.</li>
+                        <li>3 kids.</li>
+                    </ul>
+                </div>
+                <div class='col-3'>
+                    <ul class='list-unstyled'>
+                        <li class='text-center'><span class='persona-icon'><i class="fa fa-users" aria-hidden="true"></i></span></li>
+                        <li class='text-center'>Tim</li>
+                        <br>
+                        <li>Casual worker</li>
+                        <li>Renter, with changing flatmates.</li>
+                        <li>Only one in the household with name on the tenancy.</li>
+                        <li>First time living away from home.</li>
+                    </ul>
+                </div>
+                <div class='col-3'>
+                    <ul class='list-unstyled'>
+                        <li class='text-center'><span class='persona-icon'><i class="fa fa-users" aria-hidden="true"></i></span></li>
+                        <li class='text-center'>Sarah & Amy</li>
+                        <Br>
+                        <li>Help desk, Project Assistant</li>
+                        <li>Home owners, 4-5yrs</li>
+                        <li>Mother and daughter.</li>
+                        <li>Not very social, keep to themselves.</li>
+                    </ul>
+                </div>
+                <div class='col-3'>
+                    <ul class='list-unstyled'>
+                        <li class='text-center'><span class='persona-icon'><i class="fa fa-users" aria-hidden="true"></i></span></li>
+                        <li class='text-center'>Satoshi & Mai</li>
+                        <br>
+                        <li>Tradie, caregiver</li>
+                        <li>Renters, less than 3months.</li>
+                        <li>Small home with limited storage.</li>
+                        <li>Large family, with relatives staying often.</li>
+                    </ul>
+                </div>
+            </div> <!-- end personas -->
 
-        <div class='container'>
-                <h2 class='header'>Audience</h2>
-                <p>My target audience is a neighbourhood, spanning one or two streets. My user group was formed from people who all live on one street, a cul-de-sac with a mix of new builds and old houses, with tenants and home owners.</p>
-                <p class='lead'>Personas</p>
+            <div class='row justify-content-center'> <!-- user research questions -->
+                <div class='col-8 bio'>
+                    <p class='tag-line'>What do you see as being a positive for being a borrower?</p>
+                    <ul class='list-unstyled'>
+                        <li>- "I want something that's easy to use and not going to take me any longer than just walking across the street and knocking on their door."</li>
+                        <li>- "I don't want to spend a lot of money on something to use it once."</li>
+                        <li>- "I only want to borrow for an evening or hours at a time; I don't want to spend the same amount of time travelling to pick up and drop off an item."</li>
+                        <li>- "My lawn mower broke down and I can't afford to replace it right now"</li>
+                    </ul>
+                    <p class='tag-line'>What do you see as being a positive for being a lender?</p>
+                    <ul class='list-unstyled'>
+                        <li>- "I have all this expensive hiking gear I only get to use once a year, but it just seems a waste for it to sit in my garage unused."</li>
+                        <li>- "I can choose if I want to lend something out, and if I don't I can always suggest the borrower to just use it at my house."</li>
+                        <li>- "I can make a bit of extra money lending out the stuff I don't use."</li>
+                    </ul>
+                    <p class='tag-line'>What are the concerns you have as a lender?</p>
+                    <ul class='list-unstyled'>
+                        <li>- "If the borrower doesn't return or damages my stuff."</li>
+                        <li>- "Am I liable if the borrower or someone else gets injured while using my stuff?"</li>
+                        <li>- "What if they return my stuff when I'm not home and it gets stolen?"</li>
+                    </ul>
+                </div>
+            </div> <!-- end user research questions -->
+
+            <div class='row justify-content-center' id='design'> <!-- design process section beginning -->
+                <div class='col-8 bio'>
+                    <p class='projects'>Design Process</p>
+                    <nav class='concept-breadcrumbs'>
+                        <a class="breadcrumb-item" href='#top'>top</a>
+                        <a class="breadcrumb-item" href='#research'>research</a>
+                        <a class="breadcrumb-item" href="#audience">audience</a>
+                        <span class="breadcrumb-item active">design</span>
+                        <a class="breadcrumb-item" href="#prototype">prototype</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class='row justify-content-center'> <!-- design functionality section -->
+                <div class='col-6 bio'>
+                    <p class='tag-line'>Defining Functionality</p>
+                    <ul class='list-unstyled'>
+                        <li>- Peer to peer lending and borrowing.</li>
+                        <li>- Catalogue items to lend out with image and set parameters like any rental fee, uage costs, deposit, times available for use, and rental type (such as on-site rental only).</li>
+                        <li>- Users are grouped into communities by street name, street address is required on joining.</li>
+                        <li>- Communities are created automatically when the first person from that street joins.</li>
+                        <li>- Have the option of doing a broader search - closest streets, suburb, side of city, and up to city level.</li>
+                        <li>- Allow the borrower to contact and message the lender before requesting to borrow.</li>
+                        <li>- Users can post requests/items wanted to lend, if what they want is not listed.</li>
+                        <li>- Rating system for both sides; everyone can see star rating and read reviews.</li>
+                        <li>- Returning requires both lender and borrower to "sign off" on the app to confirm the items have exchanged hands.</li>
+                        <li>- Lending agreement, and minimum age to use app.</li>
+                    </ul>
+                </div>
+                <div class='col-4 text-center align-self-center'>
+                    <img src='images/mystreet_style.png' alt='My Street style guide' class='img-fluid design-img'>
+                </div>
+            </div>
+
+            <div class='row justify-content-center bio'> <!-- flowcharts and wireframes begin -->
+                <div class='col-8'>
+                    <p class='tag-line'>Basic Access Flowchart</p>
+                </div>
+                <div class='col-8 text-center'>
+                    <img src='images/mystreet_basic_user_flow.png' alt="Basic user flowchart" class='img-fluid design-img'>
+                </div>
+            </div>
+            <div class='row justify-content-center bio'>
+                <div class='col-8'>
+                    <p class='tag-line'>Borrowing Flowchart</p>
+                </div>
+                <div class='col-8 text-center'>
+                    <img src='images/mystreet_borrower_flowchart.png' alt="Borrow user flowchart" class='img-fluid design-im'>
+                </div>
+            </div>
+            <div class='row justify-content-center bio'>
+                <div class='col-8'>
+                    <p class='tag-line'>Lending Flowchart</p>
+                </div>
+                <div class='col-8 text-center'>
+                    <img src='images/mystreet_lender_flowchart.png' alt='Lender Flowchart' class='img-fluid design-img'>
+                </div>
+            </div>
+            <div class='row justify-content-center bio'>
+                <div class='col-8'>
+                    <p class='tag-line'>Low-fidelity Wireframes</p>
+                </div>
+                <div class='col-8 text-center'>
+                    <img src='images/mystreet_lofiwireframe1.jpg' alt='Sign up process' class='img-fluid design-img'>
+                </div>
+                <div class='col-8 text-center'>
+                    <img src='images/mystreet_lofiwireframe2.jpg' alt='Search process' class='img-fluid design-img'> 
+                </div>
+            </div>
+            <div class='row justify-content-center bio'>
+                <div class='col-8'>
+                    <p class='tag-line'>High-fidelity Wireframes</p>
+                </div>
+                <div class='col-8 text-center'>
+                    <img src='images/mystreet_hifiwireframe.png' alt='High fidelity wireframe' class='img-responsive center-block design-img'>
+                </div>
+            </div> <!-- end of flowcharts and wireframes -->
             
-                <div class='row'>
-                    <div class='col-md-3'>   
-                        <ul class='market-research-text'>
-                            <li><span class='persona-icon center-block'><i class="fa fa-users" aria-hidden="true"></i></span></li>
-                            <li style='text-align:center;'>Marty & Gill</li>
-                            <li>High school teachers, newly wed.</li>
-                            <li>First home owners, less than 1yr</li>
-                            <li></li>
-                            <li>Moved from Auckland.</li>
-                            <li>No kids.</li>
-                        </ul>
-                    </div>
-                    <div class='col-md-3'>
-                        <ul class='market-research-text'>
-                            <li><span class='persona-icon center-block'><i class="fa fa-users" aria-hidden="true"></i></span></li>
-                            <li style='text-align:center;'>Joe & Jane</li>
-                            <li>Both retired.</li>
-                            <li>Owned and lived on the street for >20yrs</li>
-                            <li>Living alone, with adult children.</li>
-                            <li>Entertain frequently</li>
-                            <li>Planning on selling soon.</li>
-                        </ul>
-                    </div>
-                    <div class='col-md-3'>
-                        <ul class='market-research-text'>
-                            <li><span class='persona-icon center-block'><i class="fa fa-users" aria-hidden="true"></i></span></li>
-                            <li style='text-align:center;'>Sam & Samantha</li>
-                            <li>Butcher, Stay at home mum.</li>
-                            <li>Long term renters</li>
-                            <li>Immigrants.</li>
-                            <li>3 kids.</li>
-                        </ul>
-                    </div>
-                    <div class='col-md-3'>
-                        <ul class='market-research-text'>
-                            <li><span class='persona-icon center-block'><i class="fa fa-users" aria-hidden="true"></i></span></li>
-                            <li style='text-align:center;'>Tim</li>
-                            <li>Casual worker</li>
-                            <li>Renter, with changing flatmates.</li>
-                            <li>Only one in the household with name on the tenancy.</li>
-                            <li>First time living away from home.</li>
-                        </ul>
-                    </div>
+            <div class='row justify-content-center' id='prototype'> <!-- prototypes section begins -->
+                <div class='col-8 bio'>
+                    <p class='projects'>Prototype</p>
+                    <nav class='concept-breadcrumbs'>
+                        <a class="breadcrumb-item" href='#top'>top</a>
+                        <a class="breadcrumb-item" href='#research'>research</a>
+                        <a class="breadcrumb-item" href="#audience">audience</a>
+                        <a class="breadcrumb-item" href='#design'>design</a>
+                        <span class="breadcrumb-item active">prototype</span>
+                    </nav>
                 </div>
-                <div class='row'>
-                    <div class='col-md-3'></div>
-                    <div class='col-md-3'>
-                        <ul class='market-research-text'>
-                            <li><span class='persona-icon center-block'><i class="fa fa-users" aria-hidden="true"></i></span></li>
-                            <li style='text-align:center;'>Sarah & Amy</li>
-                            <li>Help desk, Project Assistant</li>
-                            <li>Home owners, 4-5yrs</li>
-                            <li>Mother and daughter.</li>
-                            <li>Not very social, keep to themselves.</li>
-                        </ul>
-                    </div>
-                    <div class='col-md-3'>
-                        <ul class='market-research-text'>
-                            <li><span class='persona-icon center-block'><i class="fa fa-users" aria-hidden="true"></i></span></li>
-                            <li style='text-align:center;'>Satoshi & Mai</li>
-                            <li>Tradie, caregiver</li>
-                            <li>Renters, less than 3months.</li>
-                            <li>Small home with limited storage.</li>
-                            <li>Large family, with relatives staying often.</li>
-                        </ul>
-                    </div>
-                    <div class='col-md-3'></div>
+                <div class='col-8 bio'>
+                    <p>I really enjoyed this project and got thoroughly immersed in it.</p>
+                    <p>In the final prototype, I tweaked the design quite a bit - I think this could have been avoided if I had consulted more people at all stages of the process. I removed the link names from the navigation bar to keep the design clean, and the names needed to be small to fit in, which would mean they wouldn't be very visible anyway. I chose the icons I did to be straightforward enough not to need the text - the only one I am not sure about is the "inventory" or "my stuff" icon, which I used an open book with a bookmark in it.</p>
+                    <p>I had overlooked the need for a home button, so that the end user could get back to the "Community Page", which is essentially their news feed. I moved the navigation bar to the bottom of the screen for easier use. I did A/B testing on whether the icons should be highlighted if you were in that location of the app, but I found it unnecessarily distracting.</p>
+                    <p>Testing this on my phone through the Principle mirroring app, almost all my text is way too small to be easily read on a phone - the individual items page, the conversation view, and the request form. Next time I would split the form into two screens, as I think keeping it all on one page will risk the end user not scrolling down to see all the fields.</p>
+                    <p>I like the colouring, but I think the pricing for the items is not contrasted enough to be visible. I would try this in the next edit to a pink button with the pale text inside in bold - still strong enough to get attention, and with enough contrast to be easier to see. On the same note, I originally liked the "clean" look of the messaging screen, but seeing it in the tests on my phone, there needs to be more contrasting colour blocks - I don't think the conversation speech bubbles stand out enough, and don't make it obvious what the conversation parts are.</p>
                 </div>
-                <p class='lead'>What do you see as being a positive for being a borrower?</p>
-                <ul class='research-questions'>
-                    <li>"I want something that's easy to use and not going to take me any longer than just walking across the street and knocking on their door."</li>
-                    <li>"I don't want to spend a lot of money on something to use it once."</li>
-                    <li>"I only want to borrow for an evening or hours at a time; I don't want to spend the same amount of time travelling to pick up and drop off an item."</li>
-                    <li>"My lawn mower broke down and I can't afford to replace it right now"</li>
-                </ul>
-                <p class='lead'>What do you see as being a positive for being a lender?</p>
-                <ul class='research-questions'>
-                    <li>"I have all this expensive hiking gear I only get to use once a year, but it just seems a waste for it to sit in my garage unused."</li>
-                    <li>"I can choose if I want to lend something out, and if I don't I can always suggest the borrower to just use it at my house."</li>
-                    <li>"I can make a bit of extra money lending out the stuff I don't use."</li>
-                </ul>
-                <p class='lead'>What are the concerns you have as a lender?</p>
-                <ul class='research-questions'>
-                    <li>"If the borrower doesn't return or damages my stuff."</li>
-                    <li>"Am I liable if the borrower or someone else gets injured while using my stuff?"</li>
-                    <li>"What if they return my stuff when I'm not home and it gets stolen?"</li>
-                </ul>
+                <div class='col-8 bio'>
+                    <p class='tag-line'>Final UI - as of 09/2017</p>
+                    <span class='text-center'><img src='images/mystreet_prototype.png' alt="My Street prototype" class='img-fluid mx-auto d-block design-img'></span>
+                </div>
+                <div class='col-8 bio'>
+                    <p class='tag-line'>Principle Model</p>
+                    <img src='images/mystreet_prototype.gif' alt="My Street GIF" class='img-fluid rounded mx-auto d-block design-img'>
+                </div>
             </div>
+            <div class='row justify-content-center'>
+                <div class='col-8 bio'>
+                    <p class='lead'>Finishing Thoughts</p>
+                    <p>I really enjoyed this and I got really good feedback from friends when I shared the prototype with them - everyone seemed interested in the idea and I'd like to do interviews to research actual usability and preference. I would like to continue to work on this project to see how far I can get it.</p>
+                </div>
+            </div>
+
         </div> <!-- container end -->
 
-        <hr>
-
         <div class='container'>
-            <h2 class='header'>Design Process</h2>
-            <p class='lead'>Defining Functionality</p>
-            <ul class='research-questions'>
-                <li>-Peer to peer lending and borrowing.</li>
-                <li>-Catalogue items to lend out with image and set parameters like any rental fee, uage costs, deposit, times available for use, and rental type (such as on-site rental only).</li>
-                <li>-Users are grouped into communities by street name, street address is required on joining.</li>
-                <li>-Communities are created automatically when the first person from that street joins.</li>
-                <li>-Have the option of doing a broader search - closest streets, suburb, side of city, and up to city level.</li>
-                <li>-Allow the borrower to contact and message the lender before requesting to borrow.</li>
-                <li>-Users can post requests/items wanted to lend, if what they want is not listed.</li>
-                <li>-Rating system for both sides; everyone can see star rating and read reviews.</li>
-                <li>-Returning requires both lender and borrower to "sign off" on the app to confirm the items have exchanged hands.</li>
-                <li>-Lending agreement, and minimum age to use app.</li>
-            </ul>
-            <p class='lead'>Basic Access Flowchart</p>
-            <img src='images/mystreet_basic_user_flow.png' alt="Basic user flowchart" class='img-responsive center-block design-img'>
-            <p class='lead'>Borrowing Flowchart</p>
-            <img src='images/mystreet_borrower_flowchart.png' alt="Borrow user flowchart" class='img-responsive center-block design-im'>
-            <p class='lead'>Lending Flowchart</p>
-            <img src='images/mystreet_lender_flowchart.png' alt='Lender Flowchart' class='img-responsive center-block design-img'>
-            <p class='lead'>Low-fidelity Wireframes</p>
-            <img src='images/mystreet_lofiwireframe1.jpg' alt='Sign up process' class='img-responsive center-block design-img'>
-            <img src='images/mystreet_lofiwireframe2.jpg' alt='Search process' class='img-responsive center-block design-img'> 
-            <p class='lead'>High-fidelity Wireframes</p>
-            <img src='images/mystreet_hifiwireframe.png' alt='High fidelity wireframe' class='img-responsive center-block design-img'>
-        </div> <!-- container end -->
-
-        <hr>
-
-        <div class='container'>
-            <h2 class='header'>Prototype</h2>
-            <p>I really enjoyed this project and got thoroughly immersed in it.</p>
-            <p>In the final prototype, I tweaked the design quite a bit - I think this could have been avoided if I had consulted more people at all stages of the process. I removed the link names from the navigation bar to keep the design clean, and the names needed to be small to fit in, which would mean they wouldn't be very visible anyway. I chose the icons I did to be straightforward enough not to need the text - the only one I am not sure about is the "inventory" or "my stuff" icon, which I used an open book with a bookmark in it.</p>
-            <p>I had overlooked the need for a home button, so that the end user could get back to the "Community Page", which is essentially their news feed. I moved the navigation bar to the bottom of the screen for easier use. I did A/B testing on whether the icons should be highlighted if you were in that location of the app, but I found it unnecessarily distracting.</p>
-            <p>Testing this on my phone through the Principle mirroring app, almost all my text is way too small to be easily read on a phone - the individual items page, the conversation view, and the request form. Next time I would split the form into two screens, as I think keeping it all on one page will risk the end user not scrolling down to see all the fields.</p>
-            <p>I like the colouring, but I think the pricing for the items is not contrasted enough to be visible. I would try this in the next edit to a pink button with the pale text inside in bold - still strong enough to get attention, and with enough contrast to be easier to see. On the same note, I originally liked the "clean" look of the messaging screen, but seeing it in the tests on my phone, there needs to be more contrasting colour blocks - I don't think the conversation speech bubbles stand out enough, and don't make it obvious what the conversation parts are.</p>
-            <p class='lead'>Final UI - as of 09/2017</p>
-            <img src='images/mystreet_prototype.png' alt="My Street prototype" class='img-responsive center-block design-img'>
-            <p class='lead'>Style Guide</p>
-            <img src='images/mystreet_style.png' alt='My Street style guide' class='img-responsive center-block design-img'>
-            <p class='lead'>Principle Model</p>
-            <img src='images/mystreet_prototype.gif' alt="My Street GIF" class='img-responsive center-block design-img'>
-            <p class='lead'>Finishing Thoughts</p>
-            <p>I really enjoyed this and I got really good feedback from friends when I shared the prototype with them - everyone seemed interested in the idea and I'd like to do interviews to research actual usability and preference. I would like to continue to work on this project to see how far I can get it.</p>
-        </div>
-        
-    <div class='container'>
-        
-            <a href='index.html'><h1 class='bottom-top'><i class="fa fa-angle-left" aria-hidden="true"></i> Back</h1></a>
-        
-    </div>
+                <div class='row justify-content-center'>
+                    <div class='col-8'>
+                        <p class='lead bold'>Want to learn more? Check out my <a href='index.html'><span class='em'>projects</span></a>, or let's work <a href="mailto:kellymarjoriewilliams@gmail.com?subject=Let's work together!"><span class='em'>together</span></a>.</p>
+                    </div>
+                </div>
+                
+                <div class='row justify-content-between gap-above'>
+                    <div class='col-6'>
+                        <ul class='list-inline'>
+                            <li class='list-inline-item'><a href="mailto:kellymarjoriewilliams@gmail.com?subject=Let's work together!"><i class="fa fa-envelope" aria-hidden="true"></i></a> </li>
+                            <li class='list-inline-item'><a href='https://github.com/kellymarjorie' target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> </li>
+                            <li class='list-inline-item'><a href='https://www.linkedin.com/in/kelly-williams-43651577/' target='_blank'><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> </li>
+                            <li class='list-inline-item'><a href='https://www.behance.net/kellymarjo9085' target='_blank'><i class="fa fa-behance" aria-hidden="true"></i></a> </li>
+                            <li class='list-inline-item'><a href='https://www.instragram.com/kellymarjorie_' target='_blank'><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class='list-inline-item'><a href='https://github.com/kellymarjorie/kellymarjorie.github.io/blob/master/Kelly_Williams_CV2017.pdf' target='_blank'>Resume</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class='col-2 navigate'>
+                        <a href='#top'><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
