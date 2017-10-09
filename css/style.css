@@ -58,8 +58,7 @@ ul.list-inline {
 .projects {
   font-family: "Share Tech Mono", monospace;
   color: #F0A202;
-  font-size: 3.5em;
-  padding-bottom: 60px; }
+  font-size: 3.5em; }
 
 .strike-through {
   text-decoration: line-through !important; }
@@ -91,7 +90,7 @@ figure {
 
 div.bio {
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.7;
@@ -103,8 +102,11 @@ img.pro-pic {
   max-width: 300px;
   padding-top: 30px; }
 
-hr {
-  color: #D7263D; }
+p.tag-line {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 1.25px; }
 
 .case-study-header {
   font-family: "Share Tech Mono", monospace;
@@ -115,13 +117,10 @@ hr {
   float: right;
   padding-bottom: 20px; }
 
-.market-research {
-  text-align: center; }
-
 .market-research-text {
   list-style: none;
   font-family: "Roboto", sans-serif;
-  font-size: .85em;
+  font-size: 15px;
   letter-spacing: .6px;
   word-spacing: 2.7px;
   line-height: 1.5;
@@ -132,16 +131,17 @@ hr {
   text-align: center;
   color: #F0A202; }
 
-.research-questions {
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  letter-spacing: .6px;
-  word-spacing: 2.7px;
-  line-height: 1.5;
-  padding-bottom: 10px; }
-
 .design-img {
+  padding-top: 30px;
   padding-bottom: 30px; }
+
+nav.concept-breadcrumbs {
+  font-family: "Share Tech Mono", monospace; }
+  nav.concept-breadcrumbs a {
+    color: #D7263D; }
+  nav.concept-breadcrumbs a:hover {
+    text-decoration: none; }
+  nav.concept-breadcrumbs span {
+    text-decoration: line-through; }
 
 /*# sourceMappingURL=style.css.map */
