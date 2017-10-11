@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Yatra+One");
-@import url("https://fonts.googleapis.com/css?family=Lalezar");
-@import url("https://fonts.googleapis.com/css?family=Caveat|Raleway");
 @import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
-  padding-top: 70px; }
+  padding-top: 70px;
+  font-family: "Roboto", sans-serif; }
 
 nav {
   padding-right: 60px;
@@ -22,6 +20,16 @@ a.nav-link.active {
   a.nav-link.active :hover {
     text-decoration: line-through; }
 
+ul.list-inline {
+  padding-bottom: 20px;
+  font-size: 25px; }
+  ul.list-inline a {
+    color: #D7263D;
+    text-decoration: none; }
+    ul.list-inline a :hover {
+      color: #D7263D;
+      text-decoration: none; }
+
 p.lead.bold {
   padding-top: 60px;
   font-family: "Roboto", sans-serif;
@@ -35,19 +43,6 @@ p.lead.bold {
 .gap-above {
   padding-top: 100px; }
 
-.project-nav {
-  padding-bottom: 40px; }
-
-ul.list-inline {
-  padding-bottom: 20px;
-  font-size: 25px; }
-  ul.list-inline a {
-    color: #D7263D;
-    text-decoration: none; }
-    ul.list-inline a :hover {
-      color: #D7263D;
-      text-decoration: none; }
-
 .navigate a {
   font-size: 4em;
   color: #F0A202;
@@ -55,7 +50,10 @@ ul.list-inline {
   .navigate a :hover {
     color: #F0A202; }
 
-.projects {
+.project-nav {
+  padding-bottom: 40px; }
+
+.projects, .sub-header {
   font-family: "Share Tech Mono", monospace;
   color: #F0A202;
   font-size: 3.5em; }
@@ -88,43 +86,25 @@ figure {
         color: #D7263D !important;
         text-decoration: none; }
 
-div.bio {
+img.pro-pic {
+  max-width: 300px;
+  padding-top: 30px; }
+
+div.bio, div.section {
   padding-top: 60px;
   padding-bottom: 60px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 1.25px; }
-  div.bio .lead-bio {
+  div.bio .lead-bio, div.section .lead-bio {
     font-size: 17px; }
-
-img.pro-pic {
-  max-width: 300px;
-  padding-top: 30px; }
 
 p.tag-line {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   line-height: 1.7;
   letter-spacing: 1.25px; }
-
-.case-study-header {
-  font-family: "Share Tech Mono", monospace;
-  font-size: 60px;
-  color: #D7263D; }
-
-.align-right {
-  float: right;
-  padding-bottom: 20px; }
-
-.market-research-text {
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  letter-spacing: .6px;
-  word-spacing: 2.7px;
-  line-height: 1.5;
-  padding-bottom: 10px; }
 
 .persona-icon {
   font-size: 3em;
