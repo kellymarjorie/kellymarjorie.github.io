@@ -1,0 +1,17 @@
+// profile pic
+img.pro-pic {
+    max-width: 300px;
+    padding-top: 30px;
+}
+
+div.bio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: $body-font;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 1.25px;
+    .lead-bio {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,69 @@
+// standard formatting for all portfolio pages
+body {
+    padding-top: 70px;
+    font-family: $body-font;
+}
+
+// nav bar formatting
+nav {
+    padding-right: 60px;
+    padding-bottom: 20px;   
+}
+a.nav-link {
+    font-family: $title-font;
+    color: $primary-colour3;
+    :hover, :active {
+        color: $primary-colour1 !important;
+        text-decoration: none;
+
+    }
+}
+a.nav-link.active {
+    text-decoration: line-through !important;
+    :hover {
+        text-decoration: line-through;
+    }
+}
+
+// social media icon links
+ul.list-inline {
+    padding-bottom: 20px;
+    font-size: 25px;
+    a {
+        color: $primary-colour1;
+        text-decoration: none;
+        :hover {
+            color: $primary-colour1;
+            text-decoration: none;
+        }
+    }
+}
+
+// header font
+p.lead.bold {
+    padding-top: 60px;
+    font-family: $body-font;
+    font-size: 3.5em;
+    .em {
+        font-weight: bold;
+        color: $primary-colour2;
+    }
+    a {
+        color: $primary-colour2 !important;
+    }
+}
+
+// used for adding whitespace above some divs
+.gap-above {
+    padding-top: 100px;
+}
+
+// for the navigation arrows on pages
+.navigate a {
+    font-size: 4em;
+    color: $primary-colour2;
+    padding-bottom: 40px;
+    :hover {
+        color: $primary-colour2;
+    }
+}

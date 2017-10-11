@@ -1,0 +1,51 @@
+// projects header div
+.project-nav {
+    padding-bottom: 40px;
+}
+
+// projects header
+.projects {
+    font-family: $title-font;
+    color: $primary-colour2;
+    font-size: 3.5em;
+}
+
+// called in the script.js file for the jquery on project tags
+.strike-through {
+    text-decoration: line-through !important;
+}
+
+// styling for the project tags
+.project-tags {
+    font-family: $title-font;
+    text-align: right;
+    padding-bottom: 60px;
+    a {
+        font-size: 15px;
+        color: $primary-colour1;
+        cursor: pointer;
+    }
+}
+
+// styling for the project thumbnails
+figure {
+    padding-bottom: 50px;
+    display: block;
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    figcaption {
+        font-family: $body-font;
+        .tags {
+            font-size: 0.8em;
+        }
+        a {
+            color: $primary-colour1;
+            :link, :hover, :active {
+                color: $primary-colour1 !important;
+                text-decoration: none;
+            }
+        }
+    }
+}

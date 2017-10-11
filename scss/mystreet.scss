@@ -1,0 +1,44 @@
+// sub headers for page sections
+.sub-header {
+    @extend .projects; // from portfolio.scss
+}
+
+// div styling for each section of the page.
+div.section {
+    @extend div.bio; // from bio.scss
+}
+
+// alternative for the p class lead
+p.tag-line {
+    font-family: $body-font;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 1.25px;
+}
+
+// styling for persona icons
+.persona-icon {
+    font-size: 3em;
+    text-align: center;
+    color: $primary-colour2;
+}
+
+// padding for all the images
+.design-img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+// breadcrumb navigation styling
+nav.concept-breadcrumbs {
+    font-family: $title-font;
+    a {
+        color: $primary-colour1;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    span {
+        text-decoration: line-through;
+    }
+}
